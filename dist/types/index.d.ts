@@ -1,13 +1,13 @@
 import { Directive, Plugin } from "vue";
 
-declare const VueClickAwayPlugin: Plugin;
+declare const VueAllClickAwayPlugin: Plugin;
 
 declare const directive: Directive;
 declare const mixin: {
     directives: {
-        ClickAway: Directive;
+        AllClickAway: Directive;
     };
 };
 
 export { mixin, directive };
-export default VueClickAwayPlugin;
+export default VueAllClickAwayPlugin;

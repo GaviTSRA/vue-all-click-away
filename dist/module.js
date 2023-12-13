@@ -2,7 +2,7 @@ const clickEventType = function () {
   return document.ontouchstart !== null ? "click" : "touchstart";
 };
 
-const UNIQUE_ID = "__vue_click_away__";
+const UNIQUE_ID = "__vue_all_click_away__";
 
 const onMounted = function (el, binding, vnode) {
   onUnmounted(el);
@@ -20,10 +20,12 @@ const onMounted = function (el, binding, vnode) {
   };
 
   document.addEventListener(clickEventType(), el[UNIQUE_ID], false);
+  document.addEventListener("contextmenu", el[UNIQUE_ID], false);
 };
 
 const onUnmounted = function (el) {
   document.removeEventListener(clickEventType(), el[UNIQUE_ID], false);
+  document.removeEventListener("contextmenu", el[UNIQUE_ID], false);
   delete el[UNIQUE_ID];
 };
 
@@ -37,7 +39,7 @@ const onUpdated = function (el, binding, vnode) {
 
 const plugin = {
   install: function (app) {
-    app.directive('click-away', directive);
+    app.directive('all-click-away', directive);
   }
 };
 const directive = {
@@ -47,7 +49,7 @@ const directive = {
 };
 const mixin = {
   directives: {
-    ClickAway: directive
+    AllClickAway: directive
   }
 };
 

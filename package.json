@@ -1,7 +1,7 @@
 {
-  "name": "vue3-click-away",
-  "version": "1.2.4",
-  "description": "Vue 3.0 Compatible Click Away Directive",
+  "name": "vue3-all-click-away",
+  "version": "1.0.0",
+  "description": "Vue 3.0 Compatible Click Away Directive, also including right clicks",
   "main": "dist/common.js",
   "module": "dist/module.js",
   "typings": "dist/types/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VinceG/vue-click-away.git"
+    "url": "git+https://github.com/GaviTSRA/vue-all-click-away.git"
   },
   "keywords": [
     "vue",
@@ -31,11 +31,16 @@
     "clickoutside"
   ],
   "author": {
-    "name": "Vincent Gabriel",
-    "email": "vadimg88@gmail.com",
-    "url": "https://github.com/vinceg"
+    "name": "GaviTSRA",
+    "email": "gavitsra@gmail.com",
+    "url": "https://github.com/GaviTSRA"
   },
   "contributors": [
+    {
+      "name": "Vincent Gabriel",
+      "email": "vadimg88@gmail.com",
+      "url": "https://github.com/vinceg"
+    },
     {
       "name": "Denis Karabaza",
       "email": "denis.karabaza@gmail.com",
@@ -44,9 +49,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VinceG/vue-click-away/issues"
+    "url": "https://github.com/GaviTSRA/vue-all-click-away/issues"
   },
-  "homepage": "https://github.com/VinceG/vue-click-away#readme",
+  "homepage": "https://github.com/GaviTSRA/vue-all-click-away#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-transform-arrow-functions": "^7.10.4",
